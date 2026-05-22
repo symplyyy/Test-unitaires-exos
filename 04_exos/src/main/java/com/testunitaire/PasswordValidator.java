@@ -6,6 +6,17 @@ public class PasswordValidator {
         return getErrorMessage(password).equals("Password is valid");
     }
 
+    public int getStrengthScore(String password) {
+        if (password == null) return 0;
+        int score = 0;
+        if (password.length() >= 8) score++;
+        if (password.chars().anyMatch(Character::isLowerCase)) score++;
+        if (password.chars().anyMatch(Character::isUpperCase)) score++;
+        if (password.chars().anyMatch(Character::isDigit)) score++;
+        if (password.chars().anyMatch(c -> "!@#$%".indexOf(c) >= 0)) score++;
+        return score;
+    }
+
     public String getErrorMessage(String password) {
         if (password == null)
             return "Password must not be null";

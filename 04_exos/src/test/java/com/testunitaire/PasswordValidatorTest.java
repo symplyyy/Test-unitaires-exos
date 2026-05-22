@@ -254,6 +254,125 @@ class PasswordValidatorTest {
         assertEquals("Password is valid", message);
     }
 
+    // ── Bonus : getStrengthScore ────────────────────────────────────────────
+
+    @Test
+    void strengthScore_validPassword_shouldReturn5() {
+        // Arrange
+        PasswordValidator validator = new PasswordValidator();
+
+        // Act
+        int score = validator.getStrengthScore("Password1!");
+
+        // Assert
+        assertEquals(5, score);
+    }
+
+    @Test
+    void strengthScore_admin2024_shouldReturn5() {
+        // Arrange
+        PasswordValidator validator = new PasswordValidator();
+
+        // Act
+        int score = validator.getStrengthScore("Admin2024@");
+
+        // Assert
+        assertEquals(5, score);
+    }
+
+    @Test
+    void strengthScore_tooShort_shouldReturn3() {
+        // Arrange
+        PasswordValidator validator = new PasswordValidator();
+
+        // Act
+        int score = validator.getStrengthScore("short1!");
+
+        // Assert
+        assertEquals(3, score);
+    }
+
+    @Test
+    void strengthScore_noLowercase_shouldReturn4() {
+        // Arrange
+        PasswordValidator validator = new PasswordValidator();
+
+        // Act
+        int score = validator.getStrengthScore("PASSWORD1!");
+
+        // Assert
+        assertEquals(4, score);
+    }
+
+    @Test
+    void strengthScore_noUppercase_shouldReturn4() {
+        // Arrange
+        PasswordValidator validator = new PasswordValidator();
+
+        // Act
+        int score = validator.getStrengthScore("password1!");
+
+        // Assert
+        assertEquals(4, score);
+    }
+
+    @Test
+    void strengthScore_noDigit_shouldReturn4() {
+        // Arrange
+        PasswordValidator validator = new PasswordValidator();
+
+        // Act
+        int score = validator.getStrengthScore("Password!");
+
+        // Assert
+        assertEquals(4, score);
+    }
+
+    @Test
+    void strengthScore_noSpecialChar_shouldReturn4() {
+        // Arrange
+        PasswordValidator validator = new PasswordValidator();
+
+        // Act
+        int score = validator.getStrengthScore("Password1");
+
+        // Assert
+        assertEquals(4, score);
+    }
+
+    @Test
+    void strengthScore_null_shouldReturn0() {
+        // Arrange
+        PasswordValidator validator = new PasswordValidator();
+
+        // Act
+        int score = validator.getStrengthScore(null);
+
+        // Assert
+        assertEquals(0, score);
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+        "Password1!, 5",
+        "Admin2024@, 5",
+        "short1!,    3",
+        "PASSWORD1!, 4",
+        "password1!, 4",
+        "Password!,  4",
+        "Password1,  4"
+    })
+    void csvSource_strengthScore(String password, int expected) {
+        // Arrange
+        PasswordValidator validator = new PasswordValidator();
+
+        // Act
+        int score = validator.getStrengthScore(password);
+
+        // Assert
+        assertEquals(expected, score);
+    }
+
     // ── Bonus : @NullAndEmptySource ─────────────────────────────────────────
 
     @ParameterizedTest
