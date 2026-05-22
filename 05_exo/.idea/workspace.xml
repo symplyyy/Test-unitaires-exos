@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a56aeff-615d-437a-96f9-f8c1cb0c98a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../04_exos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04_exos/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testunitaire/DiceScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testunitaire/DiceScore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1779452779133</updated>
       <workItem from="1779452780230" duration="606000" />
-      <workItem from="1779455687047" duration="342000" />
+      <workItem from="1779455687047" duration="667000" />
     </task>
     <servers />
   </component>
