@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a7ec3c-d707-403a-84f7-ef96e5e0d86b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../05_exo/05_exo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05_exo/05_exo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05_exo/05_exo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05_exo/05_exo/src/main/java/com/testunitaire/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05_exo/05_exo/src/test/java/com/testunitaire/AppTest.java" afterDir="false" />
+    <list default="true" id="1a56aeff-615d-437a-96f9-f8c1cb0c98a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../04_exos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04_exos/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +15,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
-  <component name="ProjectId" id="3E4eYZNdI268BpCMrD4QWpe46xr" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3E4zl6N2dcY7WLOCsYmcfPuQhCd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,6 +34,7 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/timeo/Documents/Ynov/tests unitaires/04_exos/05_exo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,6 +44,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="05_exo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="05_exo" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -57,12 +67,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f3a7ec3c-d707-403a-84f7-ef96e5e0d86b" name="Changes" comment="" />
-      <created>1779442318247</created>
+      <changelist id="1a56aeff-615d-437a-96f9-f8c1cb0c98a9" name="Changes" comment="" />
+      <created>1779452779133</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1779442318247</updated>
-      <workItem from="1779442319240" duration="2878000" />
+      <updated>1779452779133</updated>
+      <workItem from="1779452780230" duration="606000" />
+      <workItem from="1779455687047" duration="342000" />
     </task>
     <servers />
   </component>

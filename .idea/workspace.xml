@@ -4,32 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a7ec3c-d707-403a-84f7-ef96e5e0d86b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../05_exo/05_exo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05_exo/05_exo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05_exo/05_exo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05_exo/05_exo/src/main/java/com/testunitaire/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05_exo/05_exo/src/test/java/com/testunitaire/AppTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="ae951084-14f6-48a7-9ee4-41b8eaed7786" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
+  "associatedIndex": 0
 }]]></component>
-  <component name="ProjectId" id="3E4eYZNdI268BpCMrD4QWpe46xr" />
+  <component name="ProjectId" id="3DwheWv9JmgABoaysSbo82kNFRB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -38,6 +31,7 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/timeo/Documents/Ynov/tests unitaires/04_exos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,12 +51,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f3a7ec3c-d707-403a-84f7-ef96e5e0d86b" name="Changes" comment="" />
-      <created>1779442318247</created>
+      <changelist id="ae951084-14f6-48a7-9ee4-41b8eaed7786" name="Changes" comment="" />
+      <created>1779444426181</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1779442318247</updated>
-      <workItem from="1779442319240" duration="2878000" />
+      <updated>1779444426181</updated>
+      <workItem from="1779444427211" duration="2047000" />
     </task>
     <servers />
   </component>
