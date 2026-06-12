@@ -17,7 +17,6 @@ class FrameTest {
   @Mock
   private IGenerateur generateur;
 
-  // prepare une frame dont les lancers tomberont sur les valeurs donnees
   private Frame frameWithRolls(boolean lastFrame, int first, int... others) {
     when(generateur.randomPin(anyInt())).thenReturn(first, box(others));
     return new Frame(generateur, lastFrame);
