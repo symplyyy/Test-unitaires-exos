@@ -1,7 +1,9 @@
 package com.ynov.booking.service;
 
 import com.ynov.booking.dto.CreateReservationRequest;
+import com.ynov.booking.exception.RoomNotFoundException;
 import com.ynov.booking.model.Reservation;
+import com.ynov.booking.model.ReservationStatus;
 import com.ynov.booking.repository.ReservationRepository;
 import com.ynov.booking.repository.RoomRepository;
 import org.springframework.stereotype.Service;
@@ -18,14 +20,22 @@ public class ReservationService {
     }
 
     public Reservation create(CreateReservationRequest request) {
-        throw new UnsupportedOperationException("pas encore implémenté");
+        roomRepository.findById(request.getRoomId())
+                .orElseThrow(() -> new RoomNotFoundException(request.getRoomId()));
+
+        // TODO valider le nom, le creneau et verifier les chevauchements
+        Reservation reservation = new Reservation(request.getRoomId(), request.getPersonName(),
+                request.getStart(), request.getEnd(), ReservationStatus.CONFIRMED);
+        return reservationRepository.save(reservation);
     }
 
     public Reservation getById(Long id) {
-        throw new UnsupportedOperationException("pas encore implémenté");
+        // TODO a faire
+        return null;
     }
 
     public Reservation cancel(Long id) {
-        throw new UnsupportedOperationException("pas encore implémenté");
+        // TODO a faire
+        return null;
     }
 }
