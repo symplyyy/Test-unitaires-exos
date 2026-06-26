@@ -1,0 +1,39 @@
+name: CI
+
+# Lance la CI a chaque push et a chaque pull request
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Recuperation du code
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Installation de Java 17
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      # 3. Execution des tests + generation des rapports (JaCoCo, Cucumber)
+      - name: Build & tests
+        working-directory: exo12
+        run: mvn -B clean verify
+
+      # 4. Archivage des rapports en tant qu'artefacts du workflow
+      - name: Upload des rapports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapports-tests
+          path: |
+            exo12/target/surefire-reports
+            exo12/target/site/jacoco
+            exo12/target/cucumber-reports
